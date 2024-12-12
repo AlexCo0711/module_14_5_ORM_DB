@@ -171,7 +171,7 @@ async def get_buying_list(message):
     await message.answer(text='Выберите продукт для покупки:', reply_markup=kb_product)
 
 
-# обработчик ожидания нажатия кнопки иыбранного продукта
+# обработчик ожидания нажатия кнопки выбранного продукта
 @dp.callback_query_handler(text=['product_buying'])
 async def send_confirm_message(call):
     # обращение к картинке
